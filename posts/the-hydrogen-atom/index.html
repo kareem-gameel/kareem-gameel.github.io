@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Hydrogen Atom | capybaras.zone</title>
+<meta name="keywords" content="">
+<meta name="description" content="Welcome to the hydrogen atom: the hydrogen of atoms. The starter pack of quantum mechanics. The MVP of Schrödinger&rsquo;s early access demo.
+
+🧠 Why do we care about hydrogen?
+Because it’s the only atom we can solve exactly using the Schrödinger equation.
+It’s just:
+
+One electron
+One proton
+One huge existential crisis
+
+
+📜 Schrödinger says:
+We solve the time-independent Schrödinger equation in spherical coordinates:
+$$
+-\frac{\hbar^2}{2\mu} \nabla^2 \psi(r, \theta, \phi) - \frac{e^2}{4\pi \varepsilon_0 r} \psi = E \psi
+$$">
+<meta name="author" content="">
+<link rel="canonical" href="https://capybaras.zone/posts/the-hydrogen-atom/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://capybaras.zone/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://capybaras.zone/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://capybaras.zone/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://capybaras.zone/apple-touch-icon.png">
+<link rel="mask-icon" href="https://capybaras.zone/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://capybaras.zone/posts/the-hydrogen-atom/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://capybaras.zone/posts/the-hydrogen-atom/">
+  <meta property="og:site_name" content="capybaras.zone">
+  <meta property="og:title" content="The Hydrogen Atom">
+  <meta property="og:description" content="Welcome to the hydrogen atom: the hydrogen of atoms. The starter pack of quantum mechanics. The MVP of Schrödinger’s early access demo.
+🧠 Why do we care about hydrogen? Because it’s the only atom we can solve exactly using the Schrödinger equation.
+It’s just:
+One electron One proton One huge existential crisis 📜 Schrödinger says: We solve the time-independent Schrödinger equation in spherical coordinates:
+$$ -\frac{\hbar^2}{2\mu} \nabla^2 \psi(r, \theta, \phi) - \frac{e^2}{4\pi \varepsilon_0 r} \psi = E \psi $$">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-07T22:29:53-04:00">
+    <meta property="article:modified_time" content="2025-06-07T22:29:53-04:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Hydrogen Atom">
+<meta name="twitter:description" content="Welcome to the hydrogen atom: the hydrogen of atoms. The starter pack of quantum mechanics. The MVP of Schrödinger&rsquo;s early access demo.
+
+🧠 Why do we care about hydrogen?
+Because it’s the only atom we can solve exactly using the Schrödinger equation.
+It’s just:
+
+One electron
+One proton
+One huge existential crisis
+
+
+📜 Schrödinger says:
+We solve the time-independent Schrödinger equation in spherical coordinates:
+$$
+-\frac{\hbar^2}{2\mu} \nabla^2 \psi(r, \theta, \phi) - \frac{e^2}{4\pi \varepsilon_0 r} \psi = E \psi
+$$">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://capybaras.zone/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Hydrogen Atom",
+      "item": "https://capybaras.zone/posts/the-hydrogen-atom/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Hydrogen Atom",
+  "name": "The Hydrogen Atom",
+  "description": "Welcome to the hydrogen atom: the hydrogen of atoms. The starter pack of quantum mechanics. The MVP of Schrödinger\u0026rsquo;s early access demo.\n🧠 Why do we care about hydrogen? Because it’s the only atom we can solve exactly using the Schrödinger equation.\nIt’s just:\nOne electron One proton One huge existential crisis 📜 Schrödinger says: We solve the time-independent Schrödinger equation in spherical coordinates:\n$$ -\\frac{\\hbar^2}{2\\mu} \\nabla^2 \\psi(r, \\theta, \\phi) - \\frac{e^2}{4\\pi \\varepsilon_0 r} \\psi = E \\psi $$\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Welcome to the hydrogen atom: the hydrogen of atoms. The starter pack of quantum mechanics. The MVP of Schrödinger’s early access demo.\n🧠 Why do we care about hydrogen? Because it’s the only atom we can solve exactly using the Schrödinger equation.\nIt’s just:\nOne electron One proton One huge existential crisis 📜 Schrödinger says: We solve the time-independent Schrödinger equation in spherical coordinates:\n$$ -\\frac{\\hbar^2}{2\\mu} \\nabla^2 \\psi(r, \\theta, \\phi) - \\frac{e^2}{4\\pi \\varepsilon_0 r} \\psi = E \\psi $$\nWhere:\n( \\mu ) is the reduced mass (basically just the electron’s mass, but fancy) ( r, \\theta, \\phi ) are spherical coordinates ( \\psi ) is the wavefunction, our favorite quantum spaghetti 🔮 The result? Energy levels are quantized:\n$$ E_n = -\\frac{13.6 , \\text{eV}}{n^2} $$\nwhere ( n = 1, 2, 3, \\dots )\n🎨 And the orbitals? We get beautiful shapes from ( \\psi_{n\\ell m} ) — the quantum numbers give us the “address” of the electron.\n( n ): principal quantum number (shell) ( \\ell ): angular momentum (shape) ( m ): magnetic (orientation) 🧘‍♂️ Fun fact: An electron in the ground state of hydrogen isn’t “orbiting” — it’s just existing as a probability cloud.\nIt’s chill. It’s centered. It’s peak capybara energy.\nStay tuned for: “Why the 2p orbital is a diva and the s orbital is a minimalist monk.”\n",
+  "wordCount" : "224",
+  "inLanguage": "en",
+  "datePublished": "2025-06-07T22:29:53-04:00",
+  "dateModified": "2025-06-07T22:29:53-04:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://capybaras.zone/posts/the-hydrogen-atom/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "capybaras.zone",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://capybaras.zone/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://capybaras.zone/" accesskey="h" title="capybaras.zone (Alt + H)">capybaras.zone</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://capybaras.zone/">Home</a>&nbsp;»&nbsp;<a href="https://capybaras.zone/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      The Hydrogen Atom
+    </h1>
+    <div class="post-meta"><span title='2025-06-07 22:29:53 -0400 EDT'>June 7, 2025</span>&nbsp;·&nbsp;2 min
+
+</div>
+  </header> 
+  <div class="post-content"><p>Welcome to the hydrogen atom: the hydrogen <em>of</em> atoms. The starter pack of quantum mechanics. The MVP of Schrödinger&rsquo;s early access demo.</p>
+<hr>
+<h2 id="-why-do-we-care-about-hydrogen">🧠 Why do we care about hydrogen?<a hidden class="anchor" aria-hidden="true" href="#-why-do-we-care-about-hydrogen">#</a></h2>
+<p>Because it’s the <strong>only atom</strong> we can solve exactly using the Schrödinger equation.</p>
+<p>It’s just:</p>
+<ul>
+<li>One electron</li>
+<li>One proton</li>
+<li>One huge existential crisis</li>
+</ul>
+<hr>
+<h2 id="-schrödinger-says">📜 Schrödinger says:<a hidden class="anchor" aria-hidden="true" href="#-schrödinger-says">#</a></h2>
+<p>We solve the time-independent Schrödinger equation in spherical coordinates:</p>
+<p>$$
+-\frac{\hbar^2}{2\mu} \nabla^2 \psi(r, \theta, \phi) - \frac{e^2}{4\pi \varepsilon_0 r} \psi = E \psi
+$$</p>
+<p>Where:</p>
+<ul>
+<li>( \mu ) is the reduced mass (basically just the electron&rsquo;s mass, but fancy)</li>
+<li>( r, \theta, \phi ) are spherical coordinates</li>
+<li>( \psi ) is the wavefunction, our favorite quantum spaghetti</li>
+</ul>
+<hr>
+<h2 id="-the-result">🔮 The result?<a hidden class="anchor" aria-hidden="true" href="#-the-result">#</a></h2>
+<p>Energy levels are <strong>quantized</strong>:</p>
+<p>$$
+E_n = -\frac{13.6 , \text{eV}}{n^2}
+$$</p>
+<p>where ( n = 1, 2, 3, \dots )</p>
+<hr>
+<h2 id="-and-the-orbitals">🎨 And the orbitals?<a hidden class="anchor" aria-hidden="true" href="#-and-the-orbitals">#</a></h2>
+<p>We get beautiful shapes from ( \psi_{n\ell m} ) — the quantum numbers give us the &ldquo;address&rdquo; of the electron.</p>
+<ul>
+<li>( n ): principal quantum number (shell)</li>
+<li>( \ell ): angular momentum (shape)</li>
+<li>( m ): magnetic (orientation)</li>
+</ul>
+<hr>
+<h2 id="-fun-fact">🧘‍♂️ Fun fact:<a hidden class="anchor" aria-hidden="true" href="#-fun-fact">#</a></h2>
+<p>An electron in the ground state of hydrogen isn&rsquo;t &ldquo;orbiting&rdquo; — it&rsquo;s just <strong>existing</strong> as a probability cloud.<br>
+It’s chill. It’s centered. It’s peak capybara energy.</p>
+<hr>
+<p>Stay tuned for: <em>&ldquo;Why the 2p orbital is a diva and the s orbital is a minimalist monk.&rdquo;</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://capybaras.zone/">capybaras.zone</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

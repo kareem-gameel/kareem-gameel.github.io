@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>capybaras.zone</title>
+    <link>https://capybaras.zone/</link>
+    <description>Recent content on capybaras.zone</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jun 2025 22:29:53 -0400</lastBuildDate>
+    <atom:link href="https://capybaras.zone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Hydrogen Atom</title>
+      <link>https://capybaras.zone/posts/the-hydrogen-atom/</link>
+      <pubDate>Sat, 07 Jun 2025 22:29:53 -0400</pubDate>
+      <guid>https://capybaras.zone/posts/the-hydrogen-atom/</guid>
+      <description>&lt;p&gt;Welcome to the hydrogen atom: the hydrogen &lt;em&gt;of&lt;/em&gt; atoms. The starter pack of quantum mechanics. The MVP of Schrödinger&amp;rsquo;s early access demo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-why-do-we-care-about-hydrogen&#34;&gt;🧠 Why do we care about hydrogen?&lt;/h2&gt;
+&lt;p&gt;Because it’s the &lt;strong&gt;only atom&lt;/strong&gt; we can solve exactly using the Schrödinger equation.&lt;/p&gt;
+&lt;p&gt;It’s just:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One electron&lt;/li&gt;
+&lt;li&gt;One proton&lt;/li&gt;
+&lt;li&gt;One huge existential crisis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-schrödinger-says&#34;&gt;📜 Schrödinger says:&lt;/h2&gt;
+&lt;p&gt;We solve the time-independent Schrödinger equation in spherical coordinates:&lt;/p&gt;
+&lt;p&gt;$$
+-\frac{\hbar^2}{2\mu} \nabla^2 \psi(r, \theta, \phi) - \frac{e^2}{4\pi \varepsilon_0 r} \psi = E \psi
+$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
