@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102b2e">
+    <meta name="author" content="Kareem Abdel-Hafez">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta
+      name="description"
+      content="Kareem Abdel-Hafez's research on delta learning as target design for transferable molecular graph neural networks and baseline-to-DFT correction models."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:title" content="Delta Learning for Transferable Molecular Models | Kareem Abdel-Hafez">
+    <meta property="og:description" content="Designing smoother residual targets that align physical baselines with a molecular model's inductive bias.">
+    <meta property="og:url" content="https://kareem-gameel.github.io/projects/transferable-delta-learning/">
+    <meta property="og:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Delta Learning for Transferable Molecular Models">
+    <meta name="twitter:description" content="Target design for transferable baseline-to-DFT molecular prediction.">
+    <meta name="twitter:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
+    <link rel="canonical" href="https://kareem-gameel.github.io/projects/transferable-delta-learning/">
+    <link rel="icon" href="../../assets/images/kareem-abdelhafez.jpeg" type="image/jpeg">
+    <title>Delta Learning for Transferable Molecular Models | Kareem Abdel-Hafez</title>
+    <link rel="stylesheet" href="../../assets/css/main.css?v=20260731-1">
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script src="../../assets/js/main.js?v=20260719-1" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "@id": "https://kareem-gameel.github.io/projects/transferable-delta-learning/#project",
+        "name": "Delta Learning for Transferable Molecular Models",
+        "description": "Research treating delta learning as target design by selecting physical baselines that leave smoother, more transferable residuals for molecular machine-learning models.",
+        "url": "https://kareem-gameel.github.io/projects/transferable-delta-learning/",
+        "author": {
+          "@type": "Person",
+          "@id": "https://kareem-gameel.github.io/#person",
+          "name": "Kareem Abdel-Hafez",
+          "alternateName": ["Kareem Mahmoud Gameel", "Kareem M. Gameel", "K. M. Gameel"]
+        },
+        "keywords": [
+          "delta learning",
+          "target design",
+          "molecular graph neural networks",
+          "transfer learning",
+          "scientific machine learning",
+          "DFT correction models"
+        ],
+        "isPartOf": {"@id": "https://kareem-gameel.github.io/#website"},
+        "inLanguage": "en-CA"
+      }
+    </script>
+  </head>
+  <body class="project-detail-page project-delta">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="topbar">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="nav-brand" href="../../">Kareem Abdel-Hafez</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" title="Open navigation">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
+        <div class="nav-links" id="primary-navigation">
+          <a href="../../#research">Research</a>
+          <a href="../../#projects">Projects</a>
+          <a href="../../#publications">Publications</a>
+          <a href="../../#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <header class="project-hero">
+      <div class="project-hero-inner">
+        <p class="breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../#projects">Research Projects</a></p>
+        <p class="project-eyebrow">02 · Target design</p>
+        <h1>Delta Learning for Transferable Molecular Models</h1>
+        <p class="project-deck">
+          Treating the learning target as a design choice: selecting physical baselines that remove difficult target components and expose smoother residuals to a molecular model.
+        </p>
+        <ul class="project-keywords" aria-label="Project keywords">
+          <li>Delta Learning</li>
+          <li>Target Design</li>
+          <li>Molecular GNNs</li>
+          <li>Transferability</li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="project-content">
+        <div class="project-content-shell project-layout">
+          <div class="project-narrative">
+            <section>
+              <h2>Research question</h2>
+              <p>
+                Why do some delta-learning models transfer across chemical space while others improve only in distribution? Model capacity and dataset size are not sufficient explanations. Transferability also depends on whether the selected physical baseline removes target components that are difficult for the model to represent.
+              </p>
+            </section>
+            <section>
+              <h2>Delta learning as target design</h2>
+              <p>
+                A low-cost physical method supplies a baseline prediction, and machine learning predicts the correction required to approach a higher-fidelity quantum-chemical target. The final prediction combines both contributions.
+              </p>
+              <p class="project-equation" aria-label="Delta learning equation">
+                High-fidelity prediction = physical baseline + learned residual
+              </p>
+              <p>
+                This viewpoint makes baseline choice part of the model architecture. A useful baseline does more than correlate with the target: it reshapes the residual's smoothness, variance, and dependence on molecular structure so the remaining mapping better matches the model's inductive bias.
+              </p>
+            </section>
+            <section>
+              <h2>Evaluation strategy</h2>
+              <p>
+                The project compares baseline-to-DFT correction problems across chemical spaces, examining in-distribution accuracy together with transfer to molecules unlike those used for training. Analysis focuses on target distributions, feature-target mappings, residual complexity, and the conditions under which a lower-cost physical model produces a genuinely more learnable target.
+              </p>
+            </section>
+            <section>
+              <h2>Research objective</h2>
+              <p>
+                The goal is a practical set of design principles for hybrid physics-machine-learning models: how to select a baseline, how to diagnose target alignment, and when delta learning should improve data efficiency and out-of-distribution performance in molecular and materials prediction.
+              </p>
+            </section>
+          </div>
+
+          <aside class="project-facts" aria-label="Project details">
+            <h2>Project details</h2>
+            <ul class="project-fact-list">
+              <li><span>Status</span><strong>Manuscript in progress</strong></li>
+              <li><span>Research domain</span><strong>Transferable molecular machine learning</strong></li>
+              <li><span>Core methods</span><strong>Graph neural networks, delta learning, target analysis</strong></li>
+              <li><span>Prediction hierarchy</span><strong>Low-cost physics to DFT-quality targets</strong></li>
+              <li><span>Primary criterion</span><strong>Generalization across chemical space</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="project-publications" aria-labelledby="project-output-title">
+        <div class="project-publications-shell">
+          <p class="section-label">Current output</p>
+          <h2 id="project-output-title">Manuscript in progress</h2>
+          <ol class="project-publication-list">
+            <li>
+              <strong>The Mechanics of Δ Learning: Target Design Approach for Transferable Molecular Models</strong>
+              <p>Kareem M. Gameel. Research manuscript in preparation.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="project-next">
+        <div class="project-next-shell">
+          <div>
+            <p>Next project</p>
+            <h2>Hamiltonian-Informed Electronic Structure Learning</h2>
+          </div>
+          <a class="button button-primary" href="../hamiltonian-representation/">View project <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>&copy; 2026 Kareem Abdel-Hafez.</p>
+        <a href="../../#projects">All research projects</a>
+      </div>
+    </footer>
+  </body>
+</html>

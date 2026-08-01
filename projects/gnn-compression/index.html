@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102b2e">
+    <meta name="author" content="Kareem Abdel-Hafez">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta
+      name="description"
+      content="Kareem Abdel-Hafez's research on neuron-level sparsity, structured pruning, and efficient compression of molecular graph neural networks."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:title" content="Neuron-Level Sparsity and Efficient GNN Compression | Kareem Abdel-Hafez">
+    <meta property="og:description" content="Reducing molecular GNN size, memory, computation, and inference time while preserving accuracy and generalization.">
+    <meta property="og:url" content="https://kareem-gameel.github.io/projects/gnn-compression/">
+    <meta property="og:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Neuron-Level Sparsity and Efficient GNN Compression">
+    <meta name="twitter:description" content="Structured pruning and compression for efficient molecular graph neural networks.">
+    <meta name="twitter:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
+    <link rel="canonical" href="https://kareem-gameel.github.io/projects/gnn-compression/">
+    <link rel="icon" href="../../assets/images/kareem-abdelhafez.jpeg" type="image/jpeg">
+    <title>Neuron-Level Sparsity and Efficient GNN Compression | Kareem Abdel-Hafez</title>
+    <link rel="stylesheet" href="../../assets/css/main.css?v=20260731-1">
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script src="../../assets/js/main.js?v=20260719-1" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "@id": "https://kareem-gameel.github.io/projects/gnn-compression/#project",
+        "name": "Neuron-Level Sparsity and Efficient GNN Compression",
+        "description": "Research on neuron-level pruning and structured compression of molecular graph neural networks to reduce computational cost while preserving predictive accuracy and generalization.",
+        "url": "https://kareem-gameel.github.io/projects/gnn-compression/",
+        "author": {
+          "@type": "Person",
+          "@id": "https://kareem-gameel.github.io/#person",
+          "name": "Kareem Abdel-Hafez",
+          "alternateName": ["Kareem Mahmoud Gameel", "Kareem M. Gameel", "K. M. Gameel"]
+        },
+        "keywords": [
+          "graph neural network compression",
+          "neuron-level sparsity",
+          "structured pruning",
+          "efficient machine learning",
+          "molecular graph neural networks",
+          "model optimization"
+        ],
+        "isPartOf": {"@id": "https://kareem-gameel.github.io/#website"},
+        "inLanguage": "en-CA"
+      }
+    </script>
+  </head>
+  <body class="project-detail-page project-compression">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="topbar">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="nav-brand" href="../../">Kareem Abdel-Hafez</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" title="Open navigation">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
+        <div class="nav-links" id="primary-navigation">
+          <a href="../../#research">Research</a>
+          <a href="../../#projects">Projects</a>
+          <a href="../../#publications">Publications</a>
+          <a href="../../#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <header class="project-hero">
+      <div class="project-hero-inner">
+        <p class="breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../#projects">Research Projects</a></p>
+        <p class="project-eyebrow">04 · Efficient graph learning</p>
+        <h1>Neuron-Level Sparsity and Efficient GNN Compression</h1>
+        <p class="project-deck">
+          Transforming overparameterized molecular graph neural networks into smaller, faster models while preserving predictive accuracy and generalization.
+        </p>
+        <ul class="project-keywords" aria-label="Project keywords">
+          <li>Structured Pruning</li>
+          <li>Neuron-Level Sparsity</li>
+          <li>Molecular GNNs</li>
+          <li>Efficient ML</li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="project-content">
+        <div class="project-content-shell project-layout">
+          <div class="project-narrative">
+            <section>
+              <h2>Research question</h2>
+              <p>
+                How much of a trained molecular graph neural network is actually required for accurate prediction? Modern atomistic models are often overparameterized, increasing memory use, training cost, and inference time even when many hidden units contribute little to the final prediction.
+              </p>
+            </section>
+            <section>
+              <h2>Neuron-level compression</h2>
+              <p>
+                This project develops structured pruning methods that identify and remove redundant neurons rather than isolated scalar weights. Neuron-level sparsity changes the physical dimensions of network layers, so successful pruning can produce compact models that execute efficiently on standard hardware without requiring specialized sparse-matrix kernels.
+              </p>
+            </section>
+            <section>
+              <h2>Performance criteria</h2>
+              <p>
+                Compression is evaluated as a multi-objective problem. The relevant measures include parameter count, model size, peak memory, computational operations, and inference time alongside predictive error. Transfer tests determine whether a compressed model retains the representations needed to generalize beyond its training distribution rather than merely preserving in-distribution accuracy.
+              </p>
+            </section>
+            <section>
+              <h2>Research objective</h2>
+              <p>
+                The goal is to understand where redundancy appears in molecular GNNs and convert that understanding into reliable compression strategies. Smaller models can lower the cost of large-scale screening, accelerate simulation workflows, and make advanced scientific ML practical in resource-constrained research and industrial settings.
+              </p>
+            </section>
+          </div>
+
+          <aside class="project-facts" aria-label="Project details">
+            <h2>Project details</h2>
+            <ul class="project-fact-list">
+              <li><span>Status</span><strong>Active research</strong></li>
+              <li><span>Research domain</span><strong>Efficient scientific machine learning</strong></li>
+              <li><span>Core methods</span><strong>Structured pruning, sparsification, model optimization</strong></li>
+              <li><span>Model class</span><strong>Molecular graph neural networks</strong></li>
+              <li><span>Evaluation</span><strong>Accuracy, transfer, memory, compute, and latency</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="project-publications" aria-labelledby="project-output-title">
+        <div class="project-publications-shell">
+          <p class="section-label">Current direction</p>
+          <h2 id="project-output-title">Active compression research</h2>
+          <ol class="project-publication-list">
+            <li>
+              <strong>Neuron-level pruning and compression of molecular graph neural networks</strong>
+              <p>Method development, efficiency benchmarking, and generalization analysis are in progress.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="project-next">
+        <div class="project-next-shell">
+          <div>
+            <p>Return to project 01</p>
+            <h2>Interfacial Capacitance at the Nanoscale</h2>
+          </div>
+          <a class="button button-primary" href="../interfacial-capacitance/">View project <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>&copy; 2026 Kareem Abdel-Hafez.</p>
+        <a href="../../#projects">All research projects</a>
+      </div>
+    </footer>
+  </body>
+</html>
