@@ -23,6 +23,7 @@
 }
 
 html {
+  font-size: 18px;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
@@ -143,7 +144,7 @@ p {
 
 .nav-shell {
   width: min(calc(100% - 48px), var(--max-width));
-  min-height: 68px;
+  min-height: 72px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -237,7 +238,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: 580px;
+  min-height: 610px;
   display: flex;
   color: #ffffff;
   background: var(--hero);
@@ -248,22 +249,22 @@ p {
 .hero-inner {
   width: min(calc(100% - 48px), var(--max-width));
   margin: auto;
-  padding: 68px 0 76px;
+  padding: 74px 0 82px;
   display: grid;
-  grid-template-columns: 184px minmax(0, 1fr);
-  gap: 50px;
+  grid-template-columns: 198px minmax(0, 1fr);
+  gap: 56px;
   align-items: start;
 }
 
 .portrait-block {
-  width: 184px;
+  width: 198px;
   margin: 0;
 }
 
 .portrait-frame {
   position: relative;
-  width: 176px;
-  height: 237px;
+  width: 190px;
+  height: 256px;
 }
 
 .portrait-frame::after {
@@ -299,7 +300,7 @@ p {
 }
 
 .hero-copy {
-  max-width: 1040px;
+  max-width: 1080px;
 }
 
 .hero-kicker {
@@ -370,12 +371,12 @@ p {
 }
 
 .button {
-  min-height: 45px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 9px 16px;
+  padding: 10px 18px;
   border: 1px solid transparent;
   border-radius: 6px;
   font-size: 0.88rem;
@@ -1303,7 +1304,7 @@ p {
   }
 
   .hero h1 {
-    font-size: 3.45rem;
+    font-size: 3.05rem;
   }
 
   .section-heading-row,
@@ -1327,6 +1328,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+
   h2 {
     font-size: 2.4rem;
   }
@@ -1337,7 +1342,7 @@ p {
 
   .js .nav-links {
     position: absolute;
-    top: 68px;
+    top: 72px;
     right: 24px;
     left: 24px;
     display: none;
