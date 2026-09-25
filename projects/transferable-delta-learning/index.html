@@ -8,48 +8,69 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta
       name="description"
-      content="Kareem Abdel-Hafez's research on delta learning as target design for transferable molecular graph neural networks and baseline-to-DFT correction models."
+      content="The Mechanics of Delta Learning by Kareem M. Gameel and coauthors: target design, normalized residual roughness, and baseline complementarity for generalizable scientific machine learning."
     >
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_CA">
-    <meta property="og:title" content="Delta Learning for Transferable Molecular Models | Kareem Abdel-Hafez">
-    <meta property="og:description" content="Designing smoother residual targets that align physical baselines with a molecular model's inductive bias.">
+    <meta property="og:title" content="The Mechanics of Delta Learning | Kareem Abdel-Hafez">
+    <meta property="og:description" content="Target design, normalized residual roughness, and baseline complementarity for generalizable scientific machine learning.">
     <meta property="og:url" content="https://kareem-gameel.github.io/projects/transferable-delta-learning/">
     <meta property="og:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Delta Learning for Transferable Molecular Models">
-    <meta name="twitter:description" content="Target design for transferable baseline-to-DFT molecular prediction.">
+    <meta name="twitter:title" content="The Mechanics of Delta Learning">
+    <meta name="twitter:description" content="Target design for generalizable scientific machine learning. arXiv:2609.28782.">
     <meta name="twitter:image" content="https://kareem-gameel.github.io/assets/images/og-card.png">
     <link rel="canonical" href="https://kareem-gameel.github.io/projects/transferable-delta-learning/">
     <link rel="icon" href="../../assets/images/kareem-abdelhafez.jpeg" type="image/jpeg">
-    <title>Delta Learning for Transferable Molecular Models | Kareem Abdel-Hafez</title>
+    <title>The Mechanics of Delta Learning | Kareem Abdel-Hafez</title>
     <link rel="stylesheet" href="../../assets/css/main.css?v=20260802-2">
     <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script src="../../assets/js/main.js?v=20260719-1" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        "@id": "https://kareem-gameel.github.io/projects/transferable-delta-learning/#project",
-        "name": "Delta Learning for Transferable Molecular Models",
-        "description": "Research treating delta learning as target design by selecting physical baselines that leave smoother, more transferable residuals for molecular machine-learning models.",
-        "url": "https://kareem-gameel.github.io/projects/transferable-delta-learning/",
-        "author": {
-          "@type": "Person",
-          "@id": "https://kareem-gameel.github.io/#person",
-          "name": "Kareem Abdel-Hafez",
-          "alternateName": ["Kareem Mahmoud Gameel", "Kareem M. Gameel", "K. M. Gameel"]
-        },
-        "keywords": [
-          "delta learning",
-          "target design",
-          "molecular graph neural networks",
-          "transfer learning",
-          "scientific machine learning",
-          "DFT correction models"
-        ],
-        "isPartOf": {"@id": "https://kareem-gameel.github.io/#website"},
-        "inLanguage": "en-CA"
+        "@graph": [
+          {
+            "@type": "CreativeWork",
+            "@id": "https://kareem-gameel.github.io/projects/transferable-delta-learning/#project",
+            "name": "The Mechanics of Delta Learning",
+            "description": "Research treating delta learning as target design through normalized residual roughness and baseline complementarity.",
+            "url": "https://kareem-gameel.github.io/projects/transferable-delta-learning/",
+            "author": {"@id": "https://kareem-gameel.github.io/#person"},
+            "subjectOf": {"@id": "https://arxiv.org/abs/2609.28782"},
+            "keywords": [
+              "delta learning",
+              "target design",
+              "graph Dirichlet roughness",
+              "molecular graph neural networks",
+              "scientific machine learning",
+              "out-of-distribution generalization"
+            ],
+            "isPartOf": {"@id": "https://kareem-gameel.github.io/#website"},
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://arxiv.org/abs/2609.28782",
+            "headline": "The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning",
+            "datePublished": "2026-09-23",
+            "url": "https://arxiv.org/abs/2609.28782",
+            "sameAs": "https://doi.org/10.48550/arXiv.2609.28782",
+            "identifier": "arXiv:2609.28782",
+            "author": [
+              {"@id": "https://kareem-gameel.github.io/#person", "name": "Kareem M. Gameel"},
+              {"@type": "Person", "name": "Ihor Neporozhnii"},
+              {"@type": "Person", "name": "Sjoerd Hoogland"},
+              {"@type": "Person", "name": "Oleksandr Voznyy"}
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://kareem-gameel.github.io/#person",
+            "name": "Kareem Abdel-Hafez",
+            "alternateName": ["Kareem Mahmoud Gameel", "Kareem M. Gameel", "K. M. Gameel"]
+          }
+        ]
       }
     </script>
   </head>
@@ -76,9 +97,10 @@
       <div class="project-hero-inner">
         <p class="breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../#projects">Research Projects</a></p>
         <p class="project-eyebrow">02 · Target design</p>
-        <h1>Delta Learning for Transferable Molecular Models</h1>
+        <h1>The Mechanics of Delta Learning</h1>
         <p class="project-deck">
-          Treating the learning target as a design choice: selecting physical baselines that remove difficult target components and expose smoother residuals to a molecular model.
+          Target design for generalizable scientific machine learning through
+          normalized residual roughness and complementary physical baselines.
         </p>
         <ul class="project-keywords" aria-label="Project keywords">
           <li>Delta Learning</li>
@@ -114,13 +136,22 @@
             <section>
               <h2>Evaluation strategy</h2>
               <p>
-                The project compares baseline-to-DFT correction problems across chemical spaces, examining in-distribution accuracy together with transfer to molecules unlike those used for training. Analysis focuses on target distributions, feature-target mappings, residual complexity, and the conditions under which a lower-cost physical model produces a genuinely more learnable target.
+                We compare baseline-to-DFT correction problems across chemical
+                spaces using molecular graph neural networks, evaluating both
+                in-domain accuracy and transfer to molecules unlike those used
+                for training. Scale-normalized graph Dirichlet roughness
+                provides a pre-training diagnostic of residual learnability.
               </p>
             </section>
             <section>
-              <h2>Research objective</h2>
+              <h2>Central finding</h2>
               <p>
-                The goal is a practical set of design principles for hybrid physics-machine-learning models: how to select a baseline, how to diagnose target alignment, and when delta learning should improve data efficiency and out-of-distribution performance in molecular and materials prediction.
+                Smaller residuals are not necessarily easier to learn. Complex
+                local baselines can produce low-scale but disproportionately
+                rough targets, whereas a complementary semi-empirical baseline
+                reduces both scale and normalized roughness. Baseline choice is
+                therefore a target-design decision, not simply an accuracy
+                ranking among low-cost methods.
               </p>
             </section>
           </div>
@@ -128,7 +159,8 @@
           <aside class="project-facts" aria-label="Project details">
             <h2>Project details</h2>
             <ul class="project-fact-list">
-              <li><span>Status</span><strong>Manuscript in progress</strong></li>
+              <li><span>Status</span><strong>Preprint available on arXiv</strong></li>
+              <li><span>Posted</span><strong>September 23, 2026</strong></li>
               <li><span>Research domain</span><strong>Transferable molecular machine learning</strong></li>
               <li><span>Core methods</span><strong>Graph neural networks, delta learning, target analysis</strong></li>
               <li><span>Prediction hierarchy</span><strong>Low-cost physics to DFT-quality targets</strong></li>
@@ -140,12 +172,14 @@
 
       <section class="project-publications" aria-labelledby="project-output-title">
         <div class="project-publications-shell">
-          <p class="section-label">Current output</p>
-          <h2 id="project-output-title">Manuscript in progress</h2>
+          <p class="section-label">Publication</p>
+          <h2 id="project-output-title">Preprint</h2>
           <ol class="project-publication-list">
             <li>
-              <strong>The Mechanics of Δ Learning: Target Design Approach for Transferable Molecular Models</strong>
-              <p>Kareem M. Gameel. Research manuscript in preparation.</p>
+              <a href="https://arxiv.org/abs/2609.28782" target="_blank" rel="noreferrer">
+                The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning
+              </a>
+              <p>Kareem M. Gameel, Ihor Neporozhnii, Sjoerd Hoogland, and Oleksandr Voznyy. <em>arXiv:2609.28782</em>, 2026.</p>
             </li>
           </ol>
         </div>
