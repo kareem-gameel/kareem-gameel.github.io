@@ -337,14 +337,10 @@ p {
   line-height: 1.02;
 }
 
-.publication-name {
+.formal-name {
   margin-bottom: 18px;
   color: #a9c5c3;
   font-size: 0.98rem;
-}
-
-.publication-name strong {
-  color: #ffffff;
 }
 
 .hero-domain {
@@ -1524,7 +1520,7 @@ p {
     line-height: 1.04;
   }
 
-  .publication-name {
+  .formal-name {
     margin-bottom: 15px;
     font-size: 0.82rem;
   }
