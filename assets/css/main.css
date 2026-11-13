@@ -484,7 +484,7 @@ p {
 
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin-bottom: 22px;
 }
@@ -1307,10 +1307,6 @@ p {
   .publications-heading {
     grid-template-columns: minmax(0, 0.8fr) minmax(300px, 0.7fr);
     gap: 44px;
-  }
-
-  .logo-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .project-grid {
