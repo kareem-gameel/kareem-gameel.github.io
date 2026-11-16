@@ -909,6 +909,20 @@ p {
   margin-bottom: 0;
 }
 
+.dataset-page .project-hero h1,
+.dataset-page .project-narrative code {
+  overflow-wrap: anywhere;
+}
+
+.dataset-page .project-narrative dt {
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.dataset-page .project-narrative dd {
+  margin: 6px 0 0;
+}
+
 .project-equation {
   padding: 15px 18px;
   margin: 18px 0;
